@@ -1,0 +1,7 @@
+<h1>Looking for where to go?</h1>
+
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:location, "Whats Trending In:") %>
+  <%= text_field_tag(:location) %>
+  <%= submit_tag("Search") %>
+<% end %>
